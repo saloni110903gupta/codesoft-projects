@@ -1,0 +1,225 @@
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Styling for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    /* background-color: #292c35; */
+    background-color: black;
+    color:goldenrod;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.headings{
+    display: flex;
+flex-direction: column;
+gap:  2rem 3rem;}
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color:goldenrod;
+    font-weight: 700;
+    font-size: larger;
+}
+
+/* Styling for the hero section */
+.hero {
+    text-align: center;
+    padding: 4rem;
+    position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+display: flex;
+/* background-color: black; */
+  background-size: cover;
+  background-position:center;
+  z-index: -1; 
+  color:goldenrod;
+}
+.hero img{
+    height:80%;
+    width:50%;
+    margin-top: 0;
+margin-right: 0;
+background-position: top right;}
+.hero p{
+/* CSS for the <p> tag */
+/* width:50%; */
+    height: 100%; /* This makes it a square, adjust the height accordingly */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    font-weight: 900; /* Adjust the font size as needed */
+    font: larger;
+    font-size: xx-large;
+    letter-spacing: -.02rem;
+    margin: auto;
+ }
+ .hero p::before {
+    content: attr(data-text); /* Use the content attribute to get the text */
+    background: linear-gradient(to right, #ff5733, #ffd633, #33ff57, #337aff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 3rem auto;
+    width: fit-content;
+    font-size: large;
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+/* Styling for product section */
+.product-section {
+    padding: 4rem;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: 80%;
+}
+
+.product h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Styling for footer */
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contact-info {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+}
